@@ -42,13 +42,11 @@ body {
   padding-top: 10rem;
 }
 .img-hero {
-  width: 100%;
-  height: auto;
   grid-column: 7 / 13;
 }
 .img {
   width: 100%;
-  /* max-width: 40rem; */
+  margin: auto;
 }
 .textos-hero {
   grid-column: 1 / 7;
@@ -81,7 +79,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin-top: 8rem;
 }
 .item {
   width: 30%;
@@ -151,6 +149,7 @@ footer {
 }
 .textos-footer {
   grid-column: 1/ -1;
+  align-self: center;
 }
 .footer-item {
   grid-column: span 3;
@@ -159,4 +158,59 @@ footer {
 .footer-item a {
   color: #fff;
   font-size: 3rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .header {
+    height: auto;
+  }
+  .grid {
+    gap: 5rem;
+  }
+  .img-hero,
+  .textos-hero {
+    grid-column: 1 / -1;
+    padding: 0;
+  }
+  .services {
+    height: auto;
+    margin-top: 4rem;
+  }
+  .item {
+    width: 60%;
+    margin: 2rem 0;
+    height: auto;
+    padding: 3rem;
+  }
+  .about-us {
+    padding-top: 7rem;
+  }
+  .textos-mission {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
+  .img-mission {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  }
+  .item {
+    width: 90%;
+    padding: 3rem 8rem;
+  }
+  .number {
+    width: 55%;
+    border-bottom: 1px dotted #fff;
+    margin-bottom: 2rem;
+    padding-bottom: .5rem;
+  }
+  .footer-item {
+    grid-column: 1 / -1;
+  }
 }
