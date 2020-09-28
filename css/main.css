@@ -7,11 +7,6 @@
   box-sizing: border-box;
 }
 
-/* Custom properties */
-:root {
-  --black: #333333;
-}
-
 /* Global styles */
 html {
   font-size: 10px;
@@ -52,8 +47,8 @@ body {
   grid-column: 7 / 13;
 }
 .img {
-  width: 95%;
-  max-width: 40rem;
+  width: 100%;
+  /* max-width: 40rem; */
 }
 .textos-hero {
   grid-column: 1 / 7;
@@ -64,11 +59,104 @@ body {
 }
 .cta {
   width: 13rem;
-  background-color: var(--black);
+  background-color: #3f3d56;
   color: #fff;
   display: inline-block;
   text-align: center;
   padding: 1rem 0;
   text-decoration: none;
   margin-top: 2rem;
+}
+
+/* Services */
+.services {
+  height: 37rem;
+  background: linear-gradient(180deg, #fff 50%, #000 50%);
+}
+.items {
+  grid-column: 1 / -1;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.item {
+  width: 30%;
+  background: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  padding: 2rem 1rem;
+  overflow: hidden;
+  text-align: center;
+  height: 22rem;
+}
+[class^="far fa"] {
+  font-size: 5rem;
+  text-align: center;
+}
+.titulo-services {
+  margin: 2rem 0;
+}
+
+/* About us */
+.about-us {
+  background: #000;
+  color: #fff;
+  height: auto;
+  padding-bottom: 6rem;
+}
+.textos-about-us {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+.textos-about-us .parrafo {
+  margin-top: 1rem;
+  color: #ccc;
+}
+.numbers {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.number {
+  text-align: center;
+  font-size: 3rem;
+  width: 25%;
+}
+
+/* Mission */
+.mission {
+  padding: 8rem 0;
+}
+.textos-mission {
+  grid-column: 7 / 13;
+  display: grid;
+  gap: 3rem;
+  line-height: 1.6;
+}
+.img-mission {
+  grid-column: 1 / 7;
+  grid-row: 1 / 2;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 6rem 0;
+}
+.textos-footer {
+  grid-column: 1/ -1;
+}
+.footer-item {
+  grid-column: span 3;
+  padding-top: 2rem;
+}
+.footer-item a {
+  color: #fff;
+  font-size: 3rem;
 }
