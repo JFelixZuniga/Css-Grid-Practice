@@ -20,17 +20,55 @@ body {
   font-size: 1.6rem;
   font-family: "Raleway", sans-serif;
 }
-.contenedor {
-  margin: 0 auto;
-  max-width: 120rem;
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 90%;
+  max-width: 110rem;
+  margin: auto;
+  gap: 1rem;
+  overflow: hidden;
+  align-items: center;
+}
+.weight-400 {
+  font-weight: 400;
+}
+.weight-600 {
+  font-weight: 600;
+}
+.parrafo {
+  margin-bottom: 2rem;
+}
+
+/* Header */
+.header {
+  height: 50rem;
+  padding-top: 10rem;
+}
+.img-hero {
   width: 100%;
+  height: auto;
+  grid-column: 7 / 13;
 }
-a {
+.img {
+  width: 95%;
+  max-width: 40rem;
+}
+.textos-hero {
+  grid-column: 1 / 7;
+  padding-right: 5rem;
+}
+.textos-hero p {
+  text-align: justify;
+}
+.cta {
+  width: 13rem;
+  background-color: var(--black);
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  padding: 1rem 0;
   text-decoration: none;
-}
-ul {
-  list-style: none;
-}
-img {
-  max-width: 100%;
+  margin-top: 2rem;
 }
